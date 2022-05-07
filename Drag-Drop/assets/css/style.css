@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: steelblue;
+    overflow: hidden;
+}
+.dragbox{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+}
+.drag-1{
+    background-image: url(/assets/image/bg.png);
+    width: 190px;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: move;
+}
+.save{
+    border: 10px solid #ccc;
+}
+.hovered{
+    background-color: #ccc;
+    border-style: dashed;
+    border-color: #000;
+}
+@media (max-width: 700px) {
+    body{
+        flex-direction: column;
+    }
+}
